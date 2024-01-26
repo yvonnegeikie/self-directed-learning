@@ -63,5 +63,8 @@ function playGame() {
     const userChoice = getUserChoice('rock', 'paper', 'scissors');
     const computerChoice = getComputerChoice();
     console.log(playGame);
-};
 
+    determineWinner(userChoice, computerChoice);
+    console.log(determineWinner);
+};
+playGame();
