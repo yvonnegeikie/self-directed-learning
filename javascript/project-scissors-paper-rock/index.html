@@ -4,19 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Scissors, Paper, Rock</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <h1>Scissors, Paper, Rock!</h1>
+    <p>Pick a button bellow to start the game</p>
+    <button onclick="playGame('scissors')">Scissors</button>
+    <button onclick="playGame('paper')">Paper</button>
+    <button onclick="playGame('rock')">Rock</button>
+
+    <div id="user-choice"></div>
+    <div id="computer-choice"></div>
+    <div id="result"></div>
+
+
     <script src="script.js"></script>
 </body>
-<section class="buttons">
-    <div class="buttonContainer">
-        <button button="button" onclick="getUserChoice">Scissors</button>
-        <button button="button" onclick="getUserChoice">Paper</button>
-        <button button="button" onclick="getUserChoice">Rock</button>
-        <button button="button" onclick="determineWinner"></button>
-    </div>
-</section>
 
 </html>
