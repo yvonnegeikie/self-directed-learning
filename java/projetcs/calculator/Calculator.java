@@ -1,3 +1,4 @@
+package java.projetcs.Calculator;
 /*
 Use classes, methods, and objects to create a simple arithmetic calculator. The calculator will be able to:
 
