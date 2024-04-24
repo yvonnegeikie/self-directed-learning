@@ -10,6 +10,11 @@ public class Reservation {
         restaurantCapacity = capacity;
         isRestaurantOpen = open;
     }
+    // // Using the OR operator to check if both conditions are met
+    // public Reservation(int count, int capacity, boolean open) {
+    // if (guestCount < 1 || guestCount > 8) {
+    // System.out.println("Invalid reservation!");
+    // }
 
     // If both conditions are met, reservations confirmed, else denied
     public void confirmReservation() {
@@ -22,9 +27,14 @@ public class Reservation {
         }
     }
 
-    // Prints message to user regardless of confirmed/denied
+    // Use NOT ! operator for more sincinct code and less conditionals
     public void informUser() {
-        System.out.println("Please enjoy your meal!");
+        // Write conditional here
+        if (!isConfirmed) {
+            System.out.println("Unable to confirm reservation, please contact restaurant.");
+        } else {
+            System.out.println("Please enjoy your meal!");
+        }
     }
 
     // Main method
