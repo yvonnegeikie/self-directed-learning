@@ -1,3 +1,5 @@
+package com.dyedurham.demo;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -38,23 +40,6 @@ public class NameSorter {
         sorter.writeNamesToFile(names, outputFile);
 
         System.out.println("Names sorted successfully and saved to sorted-names-list.txt");
-    }
-
-    // This method reads names from a file and returns them as a list
-    // It handles IOExceptions by printing an error message and throwing a
-    // RuntimeException
-    private List<String> readNamesFromFile(String inputFile) {
-        List<String> names = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(inputFile))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                names.add(line);
-            }
-        } catch (IOException e) {
-            System.err.println("Error reading from file: " + e.getMessage());
-            throw new RuntimeException(e);
-        }
-        return names;
     }
 
     // This method sorts a list of names in alphabetical order.
