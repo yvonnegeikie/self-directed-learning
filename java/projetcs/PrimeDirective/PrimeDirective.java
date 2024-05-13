@@ -23,7 +23,12 @@ class PrimeDirective {
         System.out.println(number + " is prime");
       } else {
         System.out.println(number + " is not prime");
+        // 7 should return true
+        // 28 should return false
+        // 2 should return true
+        // 0 should return false
+        // run with java PrimeDirective
       }
     }
   }
-} // Complete up to 8.
+}
